@@ -1,0 +1,321 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<link href="static/css/my-style.css" rel="stylesheet" type="text/css"> 
+
+<!-- <link href="static/css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+
+<!-- <link href="static/css/main.css" rel="stylesheet" type="text/css"> -->
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US"> 
+
+
+
+<body>
+<div class="container">
+<div class="special">
+<h2>BOOKING ENQUIRY FORM</h2>
+</div>
+</div>
+<div class="my-new-form">
+<div class="col-sm-12">
+<div class="container saj-nis-enq">
+   <span style="color: #000;">All fields marked with (<span class="req-star">*</span>) are mandatory</span>
+<form class="form-horizontal long-form" method="post" enctype="multipart/form-data" name="enquiry" id="enquiry">
+<div class="col-sm-12">
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Name of the Company<span class="req-star">*</span></strong> </label>  
+<div class="col-md-12">
+<input type="text" name="company" id="company" placeholder="Name of the Company" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Contact Person<span class="req-star">*</span></strong></label>  
+<div class="col-md-12">
+<input type="text" name="cperson" id="cperson" placeholder="Contact Person" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Designation<span class="req-star">*</span></strong> </label>  
+<div class="col-md-12">
+<input type="text" name="designation" id="designation" placeholder="Designation" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textarea"><strong>Address<span class="req-star">*</span></strong></label>
+<div class="col-md-12">                     
+<textarea name="address" id="address" class="form-control" placeholder="Address" style="height: 36px;" required></textarea>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Phone No.<span class="req-star">*</span></strong></label>  
+<div class="col-md-12">
+<input type="text" name="phone" id="phone" placeholder="Phone No." class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong> Email Id<span class="req-star">*</span></strong></label>  
+<div class="col-md-12">
+<input type="eamil" name="email" id="email" placeholder="Email Id" class="form-control input-md" required>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+<h2><strong>DETAILS OF MATERIALS TO BE DISPATCHED</strong></h2>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong> Description of Materials<span class="req-star">*</span></strong> </label>  
+<div class="col-md-12">
+<input type="text" name="dmaterials" placeholder="Description of Materials" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>From<span class="req-star">*</span></strong> </label>  
+<div class="col-md-12">
+<input type="text" name="disfrom" id="disfrom" placeholder="From" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>To<span class="req-star">*</span></strong></label>  
+<div class="col-md-12">
+<input type="text" name="sentto" id="sentto" placeholder="To" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Method of Packing<span class="req-star">*</span></strong></label>  
+<div class="col-md-12">
+<input type="text" name="packing" id="packing" placeholder="Method of Packing" class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>No. of Pkgs.<span class="req-star">*</span></strong></label>  
+<div class="col-md-12">
+<input type="text" name="nopkgs" placeholder="No. of Pkgs." class="form-control input-md" required>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Actual weight of each package</strong></label>  
+<div class="col-md-12">
+<input type="text" name="package" id="package" placeholder="Actual weight of each package" class="form-control input-md">
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Total No.of Loads/Tonnage</strong></label>  
+<div class="col-md-12">
+<input type="text" name="tonnage" id="tonnage" placeholder="Total No.of Loads/Tonnage" class="form-control input-md">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+<h2 style="margin-bottom: 15px;"><strong>Particulars</strong></h2>
+<div class="col-md-12">
+<div class="form-group">
+<label class="col-md-1 control-label" for="textinput" style="text-align: left;"><strong>Length</strong> </label>  
+<div class="col-md-4">
+<input type="text" name="lengthd" id="lengthd" placeholder="Length" class="form-control input-md">
+</div> 
+<div class="col-md-4 enq-sn">
+  <select name="lengthm" id="lengthm" class="form-control sselect">
+    <option value="">--Select--</option>
+    <option value="Inch">Inches</option>
+    <option value="Feet">Feet</option>
+    <option value="Millimetre">Millimetres</option>
+    <option value="Centimetre">Centimetres</option>
+    <option value="Meter">Meters</option>
+  </select>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<label class="col-md-1 control-label" for="textinput" style="text-align: left;"><strong>Width</strong> </label>  
+<div class="col-md-4">
+<input type="text" name="widthd" id="widthd" placeholder="Width" class="form-control input-md">
+</div>
+<div class="col-md-4 enq-sn">
+  <select name="widthm" id="widthm" class="form-control sselect">
+    <option value="">--Select--</option>
+    <option value="Inch">Inches</option>
+    <option value="Feet">Feet</option>
+    <option value="Millimetre">Millimetres</option>
+    <option value="Centimetre">Centimetres</option>
+    <option value="Meter">Meters</option>
+  </select>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<label class="col-md-1 control-label" for="textinput" style="text-align: left;"><strong>Height</strong> </label>  
+<div class="col-md-4 enq-sn">
+<input type="text" name="heightd" id="heightd" placeholder="Height" class="form-control input-md">
+</div> 
+<div class="col-md-4 enq-sn">
+  <select name="heightm" id="heightm" class="form-control sselect">
+    <option value="">--Select--</option>
+    <option value="Inch">Inches</option>
+    <option value="Feet">Feet</option>
+    <option value="Millimetre">Millimetres</option>
+    <option value="Centimetre">Centimetres</option>
+    <option value="Meter">Meters</option>
+  </select>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<label class="col-md-1 control-label" for="textinput" style="text-align: left;"><strong>Weight</strong> </label>  
+<div class="col-md-4">
+<input type="text" name="weightd" id="weightd" placeholder="Weight" class="form-control input-md">
+</div>
+<div class="col-md-4 enq-sn">
+  <select name="weightm" id="weightm" class="form-control sselect">
+    <option value="">--Select--</option>
+    <option value="Kg">Kilograms</option>
+    <option value="Tons">Tons</option>
+  </select>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Value of materials</strong> </label>  
+<div class="col-md-12">
+<input id="materials" name="materials" type="text" placeholder="Rs." class="form-control input-md">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+<div class="col-sm-4">
+<div class="form-group">
+  <label class="col-md-12 control-label" for="radios"><strong>Insured</strong></label>
+  <div class=""> 
+    <label class="radio-inline" for="radios-0">
+     <input type="radio" name="nsured" value="yes" checked>
+   <strong> Yes</strong>
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="nsured" value="no">
+    <strong> No</strong>
+    </label>   
+  </div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="radios"><strong>Door Collection</strong></label>
+<label class="radio-inline" for="radios-0">
+<input type="radio" name="dcolloction" value="yes" checked><strong>Yes</strong></label> 
+<label class="radio-inline" for="radios-1">
+<input type="radio" name="dcolloction" value="no"><strong>No</strong></label>  
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="radios"><strong>Door Delivery </strong></label>
+<label class="radio-inline" for="radios-0">
+<input type="radio" name="ddelivery" value="yes" checked><strong>Yes</strong></label> 
+<label class="radio-inline" for="radios-1">
+<input type="radio" name="ddelivery" value="no"><strong>No</strong></label>    
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="radios"><strong>Freight Payable By</strong></label>
+<label class="radio-inline" for="radios-0">
+<input type="radio" name="freight" value="Consignor" checked><strong>Consignor</strong></label> 
+<label class="radio-inline" for="radios-1">
+<input type="radio" name="freight" value="Consignee"><strong>Consignee</strong></label>
+<label class="radio-inline" for="radios-1">
+<input type="radio" name="freight" value="Third Party"><strong>Third Party</strong></label>     
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="radios"><strong>GST Registered</strong></label>
+<label class="checkbox-inline" for="radios-0">
+<input type="checkbox" name="gstregis[]" value="Consignor"><strong>Consignor</strong></label> 
+<label class="checkbox-inline" for="radios-1">
+<input type="checkbox" name="gstregis[]" value="Consignee"><strong>Consignee</strong></label>
+<label class="checkbox-inline" for="radios-1">
+<input type="checkbox" name="gstregis[]" value="Billing Party"><strong>Billing Party</strong></label>     
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Special Services Required</strong></label>  
+<div class="col-md-12">
+<input type="text" name="special_ser" id="special_ser" placeholder="Special Services Required" class="form-control input-md">
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Any other Requirements</strong></label>  
+<div class="col-md-12">
+<input type="text" name="other_req" id="other_req" placeholder="Any other Requirements" class="form-control input-md">
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<label class="col-md-12 control-label" for="textinput"><strong>Expected Date of Booking</strong></label>  
+<div class="col-md-12">
+<input type="date" name="date" id="date" placeholder="Expected Date of Booking" class="form-control input-md">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+<input type="submit" name="submit" value="Submit" class="btn sn-btn btn-primary">
+<button type="reset" class="btn sn-btn btn-primary">RESET</button>
+</div>
+</fieldset>
+</form>
+<div class="clearfix">&nbsp;</div>
+<div class="clearfix">&nbsp;</div>
+</div>
+</div>
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.arclimited.com/enquiry.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Oct 2019 10:49:42 GMT -->
+</html>
+
+
+{% endblock %}
